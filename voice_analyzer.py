@@ -174,6 +174,7 @@ def analyze(file, filename, window_time, noise_percentile, VLHR_threshold = 300)
     plt.ylim(-60,0) 
     frequency_axis = np.arange(DB.size)/window_time
     plt.plot(frequency_axis, DB)
+    plt.savefig(f'test LTAS.png')
     plt.show()
     print(f'Maximum decibel = {np.amax(DB)}')
 
